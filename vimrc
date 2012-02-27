@@ -30,10 +30,13 @@ au BufWritePost .vimrc so ~/.vimrc
 set gfn=Meslo\ LG\ L\ DZ:h14
 set guifont=Meslo\ LG\ L\ DZ:h14
 map <F2> :NERDTreeToggle<CR>
-set transparency=10
 syntax enable
 set background=dark
 colorscheme solarized
+
+if has('gui_running')
+  set transparency=5
+endif
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
