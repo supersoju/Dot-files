@@ -1,11 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/ajones/Dropbox/mannix/Barton/Barton/www'
-let g:netrw_dirhist_2='/Users/ajones/Documents/Web/Barton Webapp'
-let g:netrw_dirhist_3='ftp://dinadwye@208.11.94.98/'
-let g:netrw_dirhist_4='ftp://dinadwye@208.112.94.98/www/'
-let g:netrw_dirhist_5='ftp://dinadwye@208.112.94.98/www/wp-content/'
-let g:netrw_dirhist_6='ftp://dinadwye@208.112.94.98/www/wp-content/themes/'
-let g:netrw_dirhist_7='ftp://dinadwye@208.112.94.98/www/wp-content/themes/960-base/'
-let g:netrw_dirhist_8='/Users/ajones/Documents/Web/Barton Webapp'
-let g:netrw_dirhist_9='/Users/ajones/Documents/Web/Lake George Kayak/mobile'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Volumes/ajones/Sites/htdocs/omya'
+let g:netrw_dirhist_2='/Users/ajones/Dropbox/Mannix/Schroon Lake BB/mobile'
+let g:netrw_dirhist_3='/Users/ajones/Dropbox/Mannix/Lewis House'
+let g:netrw_dirhist_4='/Users/ajones/Dropbox/Android Apps/WrestlingNewz'
