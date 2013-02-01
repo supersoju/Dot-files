@@ -13,8 +13,7 @@ set nocompatible
   call pathogen#infect()
   call pathogen#helptags()
 
-  
-  " ================ General Config ====================
+" ================ General Config ====================
 
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
@@ -25,16 +24,17 @@ set gcr=a:blinkon0              "Disable cursor blink
 
 set autoread                    "Reload files changed outside vim
 
-" automatically resize splits
-set winheight=20
-set winminheight=3
-
-
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
 set gfn=Meslo\ LG\ L\ DZ:h14
+"set gfn=Meslo\ LG\ M\ DZ:h14
+"set gfn=Source\ Code\ Pro:h14
+
 set guifont=Meslo\ LG\ L\ DZ:h14
+"set guifont=Meslo\ LG\ M\ DZ:h14
+"set guifont=Source\ Code\ Pro:h14
+
 map <F2> :NERDTreeToggle<CR>
 syntax enable
 set background=dark
@@ -69,19 +69,17 @@ endif
 
 " ================ Indentation ======================
 set autoindent
-"set smartindent
+set smartindent
 set smarttab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
 
-nnoremap j gj
-nnoremap k gk
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
+:noremap <Up> <nop>
+:noremap <Down> <nop>
+:noremap <Right> <nop>
+:noremap <Left> <nop>
 
 filetype plugin on
 filetype indent on
@@ -100,6 +98,8 @@ set foldmethod=indent   "fold based on indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
+let g:DisableAutoPHPFolding = 1
+
 " ================ Completion =======================
 
 set wildmode=list:longest
@@ -107,15 +107,12 @@ set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 
-set mouse=a
-set ruler
-set laststatus=2
-
 "
 
 " ================ Scrolling ========================
 
-set scrolloff=2         "Start scrolling when we're 8 lines away from margins
+set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
 

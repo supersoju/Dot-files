@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Volumes/ajones/Sites/htdocs/omya'
-let g:netrw_dirhist_2='/Users/ajones/Dropbox/Mannix/Schroon Lake BB/mobile'
-let g:netrw_dirhist_3='/Users/ajones/Dropbox/Mannix/Lewis House'
-let g:netrw_dirhist_4='/Users/ajones/Dropbox/Android Apps/WrestlingNewz'
-let g:netrw_dirhist_5='/Users/ajones/temp/p428/reddit'
-let g:netrw_dirhist_6='/Users/ajones/Dropbox/Mannix/laplandlakes.com/mobile'
-let g:netrw_dirhist_7='/Users/ajones/Dropbox/Mannix/CAPP/mobile'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/ajones/Dropbox/Mannix/scripts/ruby/google-docs'
