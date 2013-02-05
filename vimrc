@@ -29,6 +29,20 @@ set autoread                    "Reload files changed outside vim
 set winheight=20
 set winminheight=3
 
+set rtp+=~/.vim/bundle/vundle/
+   call vundle#rc()
+
+ " let Vundle manage Vundle
+ " required! 
+    Bundle 'gmarik/vundle'
+
+ " My Bundles here:
+ "
+ " original repos on github
+    Bundle 'tpope/vim-fugitive'
+    Bundle 'Lokaltog/vim-easymotion'
+
+ "   Bundle 'Valloric/YouCompleteMe'
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
@@ -85,6 +99,7 @@ nnoremap <right> <nop>
 
 filetype plugin on
 filetype indent on
+filetype plugin indent on
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
