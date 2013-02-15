@@ -2,6 +2,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Powerline
+set rtp+=~/.vim/powerline/powerline/bindings/vim
+
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.
 
@@ -47,8 +50,8 @@ set rtp+=~/.vim/bundle/vundle/
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
-set gfn=Meslo\ LG\ L\ DZ:h14
-set guifont=Meslo\ LG\ L\ DZ:h14
+set gfn=Meslo\ LG\ L\ DZ\ for\ Powerline:h14
+set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h14
 map <F2> :NERDTreeToggle<CR>
 syntax enable
 set background=dark
