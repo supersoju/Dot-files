@@ -3,7 +3,7 @@
 set nocompatible
 
 " Powerline
-set rtp+=~/.vim/powerline/powerline/bindings/vim
+" set rtp+=~/.vim/powerline/powerline/bindings/vim
 
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.
@@ -12,9 +12,9 @@ set rtp+=~/.vim/powerline/powerline/bindings/vim
 " This loads all the plugins in ~/.vim/bundle
 " Use tpope's pathogen plugin to manage all other plugins
 
-  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
-  call pathogen#infect()
-  call pathogen#helptags()
+"  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
+"  call pathogen#infect()
+"  call pathogen#helptags()
 
   
   " ================ General Config ====================
@@ -32,18 +32,18 @@ set autoread                    "Reload files changed outside vim
 set winheight=20
 set winminheight=3
 
-set rtp+=~/.vim/bundle/vundle/
-   call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+"   call vundle#rc()
 
  " let Vundle manage Vundle
  " required! 
-    Bundle 'gmarik/vundle'
+"    Bundle 'gmarik/vundle'
 
  " My Bundles here:
  "
  " original repos on github
-    Bundle 'tpope/vim-fugitive'
-    Bundle 'Lokaltog/vim-easymotion'
+"    Bundle 'tpope/vim-fugitive'
+"    Bundle 'Lokaltog/vim-easymotion'
 
  "   Bundle 'Valloric/YouCompleteMe'
 
@@ -86,12 +86,15 @@ endif
 
 " ================ Indentation ======================
 set autoindent
-"set smartindent
+set smartindent
 set smarttab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+autocmd FileType html setlocal indentkeys-=*<Return>
+autocmd FileType php setlocal indentkeys-=*<Return>
+
 
 nnoremap j gj
 nnoremap k gk
@@ -99,6 +102,9 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+
+" :nmap j gj
+" :nmap k gk
 
 filetype plugin on
 filetype indent on
@@ -110,12 +116,15 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 set list listchars=tab:\ \ ,trail:·
 
 " set nowrap       "Don't wrap lines
+set wrap        " Do Wrap
 set linebreak    "Wrap lines at convenient points
+set nolist  " list disables linebreak
+
 
 " ================ Folds ============================
 
-set foldmethod=indent   "fold based on indent
-set foldnestmax=3       "deepest fold is 3 levels
+"set foldmethod=indent   "fold based on indent
+"set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
 " ================ Completion =======================
@@ -125,7 +134,7 @@ set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 
-set mouse=a
+"set mouse=a
 set ruler
 set laststatus=2
 
