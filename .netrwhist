@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/ajones/Dropbox/DCTownsend/yourvtlawyer/dnszones'
 let g:netrw_dirhist_2='/Users/ajones/Dropbox/Wordpress Plugins/Command Center/ruby'
+let g:netrw_dirhist_3='/Volumes/Green Mountain Marketing copy/rutlandchamber/wp-content/themes'
