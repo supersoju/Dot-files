@@ -112,6 +112,12 @@ filetype plugin indent on
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+filetype off
+filetype on
+
+autocmd FileType sass,scss,stylus syn cluster sassCssAttributes add=@cssColors
+
+
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
