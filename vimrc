@@ -16,8 +16,7 @@ set nocompatible
 "  call pathogen#infect()
 "  call pathogen#helptags()
 
-  
-  " ================ General Config ====================
+" ================ General Config ====================
 
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
@@ -35,13 +34,13 @@ set winminheight=3
 "set rtp+=~/.vim/bundle/vundle/
 "   call vundle#rc()
 
- " let Vundle manage Vundle
- " required! 
+" let Vundle manage Vundle
+" required!
 "    Bundle 'gmarik/vundle'
 
- " My Bundles here:
- "
- " original repos on github
+" My Bundles here:
+"
+" original repos on github
 "    Bundle 'tpope/vim-fugitive'
 "    Bundle 'Lokaltog/vim-easymotion'
 
