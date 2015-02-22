@@ -46,6 +46,7 @@ set winminheight=3
 
  "   Bundle 'Valloric/YouCompleteMe'
 
+
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
@@ -94,6 +95,8 @@ set expandtab
 autocmd FileType html setlocal indentkeys-=*<Return>
 autocmd FileType php setlocal indentkeys-=*<Return>
 
+" nice stuff
+let mapleader = ","
 
 nnoremap j gj
 nnoremap k gk
@@ -151,3 +154,7 @@ set scrolloff=2         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
+" PHPDoc
+inoremap <C-i> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <C-i> :call PhpDocSingle()<CR> 
+vnoremap <C-i> :call PhpDocRange()<CR> 
